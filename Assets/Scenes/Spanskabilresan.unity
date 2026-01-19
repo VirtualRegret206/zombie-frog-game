@@ -5026,9 +5026,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec84c04314ebf846a6dfbfec1942238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Spelar_h\xE4lsa"
-  health: 0
-  maxhealth: 0
-  healthbar: {fileID: 0}
+  health: 100
+  maxhealth: 100
+  healthbar: {fileID: 1569733585}
 --- !u!1001 &3940919228167345414
 PrefabInstance:
   m_ObjectHideFlags: 0
