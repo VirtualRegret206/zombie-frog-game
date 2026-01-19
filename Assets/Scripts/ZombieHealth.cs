@@ -5,9 +5,12 @@ public class ZombieHealth : MonoBehaviour
     public int maxHP = 50;
     public int currentHP;
 
+    Animator anim;
+
     void Start()
     {
         currentHP = maxHP;
+        anim = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
@@ -24,6 +27,6 @@ public class ZombieHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Zombien dog!");
-        Destroy(gameObject);
+        anim.SetTrigger("Die");
     }
 }
