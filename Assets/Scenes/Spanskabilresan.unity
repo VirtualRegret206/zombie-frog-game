@@ -4614,6 +4614,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &479617657 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6864280607042565705, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
+  m_PrefabInstance: {fileID: 3940919228167345414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4736,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Damage
   pHealth: {fileID: 413904867088667561}
   damage: 20
+--- !u!114 &922448342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922448318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3abbbfcf6f44c74ea38dd828be6e955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  "\xD6verlevare": {fileID: 1111107509}
+  respawnPoint: {fileID: 953459212}
 --- !u!1 &930738003
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,6 +4776,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &953459211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953459212}
+  m_Layer: 0
+  m_Name: Respawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &953459212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953459211}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.56, y: -1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5155,19 +5205,23 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 413904867088667555}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4933487232843610642, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
-      propertyPath: m_LocalPosition.x
+    - target: {fileID: 2921948427655548539, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
+      propertyPath: orthographic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4933487232843610642, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933487232843610642, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.03
+      value: -1.4000001
       objectReference: {fileID: 0}
     - target: {fileID: 4933487232843610642, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -34.72
+      value: -46.79
       objectReference: {fileID: 0}
     - target: {fileID: 4933487232843610642, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5208,7 +5262,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6864280607042565705, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6027519518769263487}
   m_SourcePrefab: {fileID: 100100000, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
 --- !u!1001 &4256593902856790388
 PrefabInstance:
@@ -5341,20 +5398,24 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2494273005717828716, guid: 996a0ef8e25450c4ea58b3334e7db53d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6027519518769263483}
-    - targetCorrespondingSourceObject: {fileID: 2494273005717828716, guid: 996a0ef8e25450c4ea58b3334e7db53d, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6055248128041954393}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5540868375274278071, guid: 996a0ef8e25450c4ea58b3334e7db53d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 413904867088667561}
   m_SourcePrefab: {fileID: 100100000, guid: 996a0ef8e25450c4ea58b3334e7db53d, type: 3}
---- !u!4 &6027519518769263483 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4933487232843610642, guid: a47bfdfc6e9e6d74aa83e0ce5f26d4a8, type: 3}
-  m_PrefabInstance: {fileID: 3940919228167345414}
+--- !u!114 &6027519518769263487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479617657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a661d0612cb89b84ba80bfceb3438791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraHolder
 --- !u!1001 &6055248128041954392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5625,6 +5686,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7399335147893774416, guid: 54c9945e46c9d6d4c816202056f3303f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 922448335}
+    - targetCorrespondingSourceObject: {fileID: 7399335147893774416, guid: 54c9945e46c9d6d4c816202056f3303f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 922448342}
   m_SourcePrefab: {fileID: 100100000, guid: 54c9945e46c9d6d4c816202056f3303f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -5640,3 +5704,5 @@ SceneRoots:
   - {fileID: 1337157585}
   - {fileID: 993892414}
   - {fileID: 1337466489}
+  - {fileID: 953459212}
+  - {fileID: 3940919228167345414}
