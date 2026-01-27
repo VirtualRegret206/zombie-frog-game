@@ -35,5 +35,6 @@ public class ZombieHealth : MonoBehaviour
         if (movement != null)
             movement.enabled = false;
         Debug.Log("Koden triggas");
+        GetComponent<Collider2D>().enabled = false;
     }
 }
