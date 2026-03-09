@@ -9,7 +9,7 @@ public class ChangeSceneOnTouch : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Byt värld!");
+            Debug.Log("Byt vï¿½rld!");
             SceneManager.LoadScene(sceneToLoad);
         }
     }
