@@ -30,10 +30,10 @@ public class ZombieHealth : MonoBehaviour
     void Die()
     {
         isDead = true;
-        Debug.Log("Zombien dog!");
         anim.SetTrigger("Die");
         if (movement != null)
             movement.enabled = false;
         Debug.Log("Koden triggas");
+        GetComponent<Collider2D>().enabled = false;
     }
 }
