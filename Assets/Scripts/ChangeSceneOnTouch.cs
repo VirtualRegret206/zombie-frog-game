@@ -5,12 +5,12 @@ public class ChangeSceneOnTouch : MonoBehaviour
 {
     public string sceneToLoad;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneToLoad);
             Debug.Log("Byt värld!");
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
