@@ -9966,6 +9966,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 153022148722526196, guid: 601fe46174cc938429195bbf063420f4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2053363706282119266, guid: 601fe46174cc938429195bbf063420f4, type: 3}
       propertyPath: m_Name
       value: InvicibleWall (1)
@@ -10023,6 +10027,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 153022148722526196, guid: 601fe46174cc938429195bbf063420f4, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2053363706282119266, guid: 601fe46174cc938429195bbf063420f4, type: 3}
       propertyPath: m_Name
       value: InvicibleWall (2)
@@ -10126,7 +10134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7692160687042915127, guid: c4b378fed2cdd5843b8bf620cbe3f50b, type: 3}
       propertyPath: sceneToLoad
-      value: Icke_funktionella
+      value: Dipper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

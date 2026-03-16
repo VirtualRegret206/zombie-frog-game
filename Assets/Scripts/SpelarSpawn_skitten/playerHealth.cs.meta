@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0ec84c04314ebf846a6dfbfec1942238
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - healthbar: {instanceID: 0}
+  - gravestonePrefab: {fileID: 457884993354185098, guid: a528112e45d21a2438b69ca6421f4a42, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

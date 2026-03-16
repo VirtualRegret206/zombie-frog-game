@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: a3abbbfcf6f44c74ea38dd828be6e955
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - "\xD6verlevare": {instanceID: 0}
+  - respawnPoint: {fileID: 7496816554431417135, guid: b40c7e81606217846985c4b45f32e3e0, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
