@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 259952256}
   m_Layer: 0
   m_Name: RespawnManager
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,12 +201,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259952255}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.56, y: -1.43, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.029999971, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 953459212}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &451014932
 GameObject:
@@ -4854,7 +4854,8 @@ Transform:
   m_LocalPosition: {x: -2.56, y: -1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 259952257}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &953459213
@@ -5483,6 +5484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\xD6verlevare"
       objectReference: {fileID: 0}
+    - target: {fileID: 5540868375274278071, guid: 996a0ef8e25450c4ea58b3334e7db53d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5124090060709761583, guid: 996a0ef8e25450c4ea58b3334e7db53d, type: 3}
     m_RemovedGameObjects: []
@@ -5625,6 +5630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpadeDamage
   damage: 25
+  bloodParticles: {fileID: 0}
 --- !u!61 &6055248128041954398 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 8972139127891954886, guid: 9dc7155f66bf6ab47806c8c517698593, type: 3}
@@ -5805,4 +5811,3 @@ SceneRoots:
   - {fileID: 1337466489}
   - {fileID: 953459212}
   - {fileID: 3940919228167345414}
-  - {fileID: 259952257}
