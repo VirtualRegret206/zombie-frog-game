@@ -13,12 +13,13 @@ GameObject:
   - component: {fileID: 4985068777929523051}
   - component: {fileID: 385451512957154844}
   - component: {fileID: 7692160687042915127}
+  - component: {fileID: -5530314469091758700}
   m_Layer: 0
   m_Name: NextLevelBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3273889981331724779
 Transform:
@@ -179,3 +180,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeSceneOnTouch
   sceneToLoad: TredjeRiket
+--- !u!114 &-5530314469091758700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3107859361204781846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1688a1e3149227459d4c4534ecd9440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'

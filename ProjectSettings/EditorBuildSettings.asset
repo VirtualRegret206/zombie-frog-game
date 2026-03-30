@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Mabel.unity
     guid: 0753a9a0f48868c4dad750c025f0cfeb
   - enabled: 1
+    path: Assets/Scenes/Spanskabilresan.unity
+    guid: 4217d9ff1e6e95c42a2b2243a6d5af40
+  - enabled: 1
     path: Assets/Scenes/Dipper.unity
     guid: f31bf9200a7e850478085a3a33ea088c
   m_configObjects:

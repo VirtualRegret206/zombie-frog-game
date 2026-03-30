@@ -54,7 +54,7 @@ public class playerHealth : MonoBehaviour
 
     private IEnumerator RespawnAfterDelay()
     {
-        yield return new WaitForSeconds(3f); // Vänta t.ex. 3 sekunder (10 är ganska länge!)
+        yield return new WaitForSeconds(0.1f); // Vänta t.ex. 3 sekunder (10 är ganska länge!)
 
         // Återställ hälsa och status
         health = maxhealth;

@@ -222,3 +222,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ZombieHealth
   maxHP: 50
   currentHP: 0
+  nextLevelBox: {fileID: 3107859361204781846, guid: c4b378fed2cdd5843b8bf620cbe3f50b, type: 3}
